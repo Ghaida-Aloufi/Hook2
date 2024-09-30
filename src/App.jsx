@@ -1,4 +1,13 @@
 import { useState } from 'react';
+import img7 from './assets/img7.png'
+import img2 from './assets/img2.png'
+import img4 from './assets/img4.png'
+import img6 from './assets/img6.png'
+import img3 from './assets/img3.png'
+
+
+
+
 
 
 function BMICalculator() {
@@ -24,20 +33,20 @@ function BMICalculator() {
 
      if (bmiValue < 18.5) {
       setBmiCategory('نقص في الوزن');
-      setImageSrc('https://c0.klipartz.com/pngpicture/484/726/gratis-png-caricatura-nariz-larga-hombre.png'); // Update to correct image path
+      setImageSrc(img4); 
     } else if (bmiValue >= 18.5 && bmiValue < 24.9) {
       setBmiCategory('وزن طبيعي');
-      setImageSrc('https://cdn.prod.website-files.com/614b13047adcea662f94ef45/61e93c091516097421cc7026_qRzrLexdO7H0WH0FgfvMUB3xIXFM7a4l5lhC1aPggqdoI1IRa8WgtOdwX0Uwj8BsEK-a7nOWNoGV2T-l9wN2illIt_ZEAbh_ost4Xb79aDXrQJA4lsfHRPwg0ss_tEjql1ACR6bg.jpeg'); // Update to correct image path
+      setImageSrc(img6); 
     } else if (bmiValue >= 25 && bmiValue < 29.9) {
       setBmiCategory('زيادة في الوزن');
-      setImageSrc('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-r0f70OIjlbIJfHi7uSn_YY7WXW9dsLKPoSl-6dF2aqJohPNqREv9l7uT6OdCBhSWk5Q&usqp=CAU');
+      setImageSrc(img3);
       
     }else if (bmiValue >= 30 && bmiValue < 34.9) {
         setBmiCategory('بدانة');
-        setImageSrc('https://cdn.alweb.com/thumbs/nutrition/article/fit710x532/1/%D9%85%D8%A7-%D9%87%D9%88-%D9%85%D8%A4%D8%B4%D8%B1-%D9%83%D8%AA%D9%84%D8%A9-%D8%A7%D9%84%D8%AC%D8%B3%D9%85-bmi-4493.jpg'); 
+        setImageSrc(img2); 
     } else {
       setBmiCategory('بدانة مفرطة');
-      setImageSrc('https://png.pngtree.com/png-clipart/20230914/original/pngtree-childhood-obesity-vector-png-image_12158912.png'); // Update to correct image path
+      setImageSrc(img7); 
     }
   };
 
